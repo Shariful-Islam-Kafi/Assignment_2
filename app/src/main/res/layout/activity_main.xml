@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Checkbox -->
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree to the terms and conditions" />
+
+    <!-- Radio Group with Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonCSE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CSE" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEEE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EEE" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCivil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CIVIL" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBBA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BBA" />
+    </RadioGroup>
+
+    <!-- RatingBar -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+    <!-- Progress text for SeekBar -->
+    <TextView
+        android:id="@+id/seekBarProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress: 0"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Customized SeekBar -->
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:maxHeight="8dp"
+        android:minHeight="8dp"
+        android:progressTint="@color/purple_500"
+        android:thumb="@drawable/seekbar" />
+
+    <!-- Switch -->
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Notifications"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
